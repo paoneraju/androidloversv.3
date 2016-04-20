@@ -1,0 +1,44 @@
+
+<div id="section1">
+            <div class="container">
+            <div class="row" ng-controller="MenuCtrl">
+                    <div class="col-sm-3">
+                        <div class="left-sidebar">
+                            
+                            <div class="panel panel-primary">
+                                 <div class="panel-heading">
+                                    <h3 class="panel-title">Brand</h3>
+                                  </div>
+                                 
+                                        <div class="list-group">
+                                          <button type="button" class="list-group-item" ng-click="getBrand('')">All</button>
+                                          <button type="button" class="list-group-item" ng-repeat = "x in myData | unique:'Brand'" ng-click="getBrand(x.Brand)">{{ x.Brand}}</button>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="col-sm-4" ng-repeat = "y in myData | filter: brand">
+                            <div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img class="img-responsive" width="300px" height="300px"ng-src='images/{{ y.path }}.jpg' alt="">
+											<h2>{{ y.price }}</h2>
+											<p>{{ y.Model }}</p>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+											    <h2>Rating</h2>
+											    <h2>{{ y.rating }}</h2>
+												<a href="#/{{y.Model | removeSpaces }}">+ View Specs</a>
+												
+											</div>
+										</div>
+								</div>
+							</div>
+                        </div>
+                       
+                    </div>
+                </div>
+                   </div>
+        </div>

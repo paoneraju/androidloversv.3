@@ -1,0 +1,94 @@
+<div id="section1">
+            <div class="container">
+<div class="row" ng-controller="SpecCtrl"ng-repeat="z in myData">
+                    <div class="col-sm-3">
+                        <div class="left-sidebar" >
+                            
+                            
+                                  <img class="img-responsive" ng-src="images/{{ z.Model }}.jpg"></img>
+                     			  	
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+	                    	<h2>{{ z.Model }}</h2>
+	                    	<p>{{ z.info }}
+	  						</p> 
+  							<h3>Specifications</h3>                                                                            
+  							<div class="table-responsive">          
+	  								<table class="table table-bordered">
+									    <tbody>
+									      <tr>
+									        <td>Rear Camera</td>
+									        <td>{{ z.cam_rear }}</td>
+									      </tr>
+									       <tr>
+									        <td>Front Camera</td>
+									        <td>{{ z.cam_front }}</td>
+									      </tr>
+									       <tr>
+									        <td>Screen Type</td>
+									        <td>{{ z.screen_type }}</td>
+									      </tr>
+									       <tr>
+									        <td>Screen Resolution</td>
+									        <td>{{ z.screen_res }}</td>
+									      </tr>
+									       <tr>
+									        <td>Processor</td>
+									        <td>{{ z.processor }}</td>
+									      </tr>
+									       <tr>
+									        <td>RAM</td>
+									        <td>{{ z.ram }}</td>
+									      </tr>
+									       <tr>
+									        <td>Internal Storage</td>
+									        <td>{{ z.store_internal }}</td>
+									      </tr>
+									       <tr>
+									        <td>External Storage</td>
+									        <td>{{ z.store_extrn }}</td>
+									      </tr>
+									       <tr>
+									        <td>Battery</td>
+									        <td>{{ z.battery }}</td>
+									      </tr>
+									       <tr>
+									        <td>SIM SLOTS</td>
+									        <td>{{ z.sim }}</td>
+									      </tr>
+									       <tr>
+									        <td>Conectivity</td>
+									        <td>{{ z.connectivity }}</td>
+									      </tr>
+									    </tbody>
+								  </table>
+							 </div>
+                    </div>
+                </div>
+                <h3>Related Videos</h3>
+                <div class="row" ng-repeat="v in myData">
+                	<div class="col-md-3 col-sm-3">
+                		<div class="embed-responsive embed-responsive-16by9 video">
+  							<a href="_blank"><iframe class="embed-responsive-item" ng-src="{{v.video_rel_1 | trustUrl }}"></iframe></a>
+						</div>
+                	</div>
+                	<div class="col-md-3 col-sm-3">
+                		<div class="embed-responsive embed-responsive-16by9">
+  							<iframe class="embed-responsive-item" ng-src="{{v.video_rel_2 | trustUrl}}"></iframe>
+						</div>
+                	</div>
+                	<div class="col-md-3 col-sm-3">
+                		<div class="embed-responsive embed-responsive-16by9">
+  							<iframe class="embed-responsive-item" ng-src="{{v.video_rel_3 | trustUrl}}"></iframe>
+						</div>
+                	</div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" ng-src="{{v.video_rel_4 | trustUrl}}"></iframe>
+                        </div>
+                    </div>
+                	
+                </div>
+                   </div>
+        </div>

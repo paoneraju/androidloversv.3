@@ -1,0 +1,156 @@
+.navbar-custom{
+  background-color:#fafafa;
+}
+
+.navbar-brand{
+  padding: 0px !important;
+}
+.btn-custom{
+  background-color: #A5C63B;
+  color: #ffffff;
+}
+
+#section1{
+  padding:120px 0px 0px 0px;
+  
+}
+
+#section2{
+    /*background-color:#0c84e4;*/
+    padding:50px 0;
+    /*color:#ffffff;*/
+}
+
+#section3{
+  text-align:center;
+}
+
+.thumbnail{
+  border:0px;
+}
+
+#quote{
+  padding:80px 0;
+}
+
+
+.top{
+  margin-top:40px;
+}
+
+
+
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_10.gif) center no-repeat #fff;
+}
+
+
+
+
+.left-sidebar{
+    background-color:#00000;
+    height: 300px;
+}
+
+.product-image-wrapper{
+	border:1px solid #F7F7F5;
+	overflow: hidden;
+	padding:5px;
+	margin-bottom:30px;
+}
+
+.single-products {
+  position: relative;
+  height:100%;
+}
+
+.productinfo{
+ position:relative;
+}
+
+.productinfo h2{
+	color: #0c84e4;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.productinfo p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #696763;
+}
+
+.productinfo img{
+  width: 100%;
+}
+
+.productinfo{
+ position:relative;
+}
+
+.product-overlay {
+  background:#fff;
+  top: 0;
+  display: none;
+  height: 0;
+  position: absolute;
+  transition: height 500ms ease 0s;
+  width: 100%;
+}
+
+.single-products:hover .product-overlay {
+  display:block;
+  height:100%;
+  opacity:.9;
+}
+
+
+.product-overlay .overlay-content {
+ 
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+
+.product-overlay p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0c84e4;
+}
+
+.product-overlay h2{
+  font-family: 'Roboto', sans-serif;
+
+  color: #0c84e4;
+}
+
+.product-overlay a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0c84e4;
+  text-decoration:none;
+}
+
+#footer{
+  position: relative;
+  height: 50px;
+  bottom: 0px;
+}
+
+.video{
+  cursor:pointer;
+}
